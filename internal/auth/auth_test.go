@@ -20,7 +20,7 @@ func TestGetAPIKeyWithInvalidHeader(t *testing.T) {
 	var header http.Header = http.Header{}
 	key, err := GetAPIKey(header)
 	if err != nil {
-		t.Logf("GetAPIKey Failed. Expected Failure for Invalid header, %s", err.Error())
+		t.Errorf("GetAPIKey Failed. Expected Failure for Invalid header, %s", err.Error())
 	} else {
 		t.Errorf("Test Pass, Expected Failure | apiKey: %s", key)
 	}
