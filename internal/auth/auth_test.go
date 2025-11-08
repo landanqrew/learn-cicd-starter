@@ -5,7 +5,6 @@ import (
 	"testing"
 )
 
-
 func TestGetAPIKeyWithValidHeader(t *testing.T) {
 	var header http.Header = http.Header{}
 	header.Set("Authorization", "ApiKey some_auth_value")
