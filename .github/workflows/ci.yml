@@ -31,3 +31,6 @@ jobs:
 
       - name: Run Go Style Checks
         run: test -z $(go fmt ./...)
+
+      - name: Install staticcheck
+        run: go install honnef.co/go/tools/cmd/staticcheck@latest
