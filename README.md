@@ -4,6 +4,7 @@ This repo contains the starter code for the "Notely" application for the "Learn 
 
 # Pipeline Status
 ![PipelineStatus](https://github.com/landanqrew/learn-cicd-starter/actions/workflows/ci.yml/badge.svg)
+![PipelineStatus](https://github.com/landanqrew/learn-cicd-starter/actions/workflows/cd.yml/badge.svg)
 
 ## Local Development
 
