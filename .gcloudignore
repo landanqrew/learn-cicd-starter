@@ -2,3 +2,8 @@
 
 # local deployment details
 LOCAL.md
+
+# environment vars
+.env
+
+
