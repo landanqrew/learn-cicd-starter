@@ -26,3 +26,13 @@ go build -o notely && ./notely
 You do *not* need to set up a database or any interactivity on the webpage yet. Instructions for that will come later in the course!
 
 Landan's version of Boot.dev's Notely app.
+
+## Deploy to Google Cloud Artifact Registry
+* ensure you have gcloud cli setup
+* enable apis
+  * cloud build api
+  * artifact registry
+* create a repo in artifact registry
+* `gcloud builds submit --tag REGION-docker.pkg.dev/PROJECT_ID/REPOSITORY/IMAGE:TAG .`
+
+`gcloud builds submit --tag us-central1-docker.pkg.dev/notely-479613/notely-ar-repo .`
